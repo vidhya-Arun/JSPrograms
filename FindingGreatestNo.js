@@ -6,8 +6,8 @@ function findingGreatestNumber()
     for (let counter = 0; counter<= numbersCount-1;counter++)
     {
         const userResponse = prompt('Enter the number' + counter+1);
-        numberList.push(userResponse);
-        copyNumberList.push(userResponse);
+        numberList.push(parseInt(userResponse));
+        copyNumberList.push(parseInt(userResponse));
     }
 //alert(Math.max(numberList));
 
