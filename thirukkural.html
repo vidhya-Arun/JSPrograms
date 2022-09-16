@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thirukkural</title>
+    <link rel="stylesheet" href="assets/styles/main.css">
+</head>
+<body>
+    <!-- for big screen view-->
+    <div class="bigScreen" >
+        <h3> Know your Kural</h3>
+        <div class="kural">
+        <input id="kuralNo" placeholder="Enter kural Number" > OR 
+        <button id="btnRandomNo" onclick="thirukkural.getRandomKural()"> Get a random Kural</button>
+        </div>
+        <div class="resultKural">
+            <div class="kuralTamil">
+                <div class="kuralDisplayT"></div>
+                <span class="spnChNameT"></span>
+                <span class="spnChGroupT"></span>
+                <span class="spnSectionT"></span>
+            </div>
+            <div class="=kuralEnglish">
+                <div class="kuralDisplayE"></div>
+                <span class="spnChNameE"></span>
+                <span class="spnChGroupE"></span>
+                <span class="spnSectionE"></span>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--for mobile view-->
+    <div class="mobile">
+
+    </div>
+    <script src="assets/JS/thirukkural.js"></script>
+</body>
+</html>
