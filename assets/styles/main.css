@@ -37,6 +37,9 @@ button{
 .mobile{
     display: block;
 }
+.bigScreen{
+    display: none;
+}
 @media only screen and (min-width:600px)
 {
     .bigScreen{
