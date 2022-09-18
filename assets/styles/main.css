@@ -29,10 +29,39 @@ button{
 /*thirukkural css*/
 .resultKural{
     display: flex;
+    justify-content: space-evenly;
+    background: darkkhaki;
+    color: darkblue;
+    border-style: ridge;
+}
+.mobile{
+    display: block;
+}
+@media only screen and (min-width:600px)
+{
+    .bigScreen{
+        display: block;
+    }
+    .mobile{
+        display: none;
+    }
 }
 .kuralTamil{
     display: grid;
 }
 .kuralEnglish{
     display: grid;
+}
+.kuralnumber{
+    text-align: center;
+    display: grid;
+    /* justify-items: end; */
+    align-items: center;
+    border:solid;
+}
+.kuralDisplayT{
+    background: antiquewhite;
+}
+.kuralDisplayE{
+    background: antiquewhite;
 }

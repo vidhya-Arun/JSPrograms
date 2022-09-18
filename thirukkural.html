@@ -12,7 +12,7 @@
     <div class="bigScreen" >
         <h3> Know your Kural</h3>
         <div class="kural">
-        <input id="kuralNo" placeholder="Enter kural Number" > OR 
+        <input id="kuralNo" placeholder="Enter kural Number" onclick="thirukkural.getKuralbyNo(kuralNo.value)"> OR 
         <button id="btnRandomNo" onclick="thirukkural.getRandomKural()"> Get a random Kural</button>
         </div>
         <div class="resultKural">
@@ -21,21 +21,48 @@
                 <span class="spnChNameT"></span>
                 <span class="spnChGroupT"></span>
                 <span class="spnSectionT"></span>
+                <span class="spnMeaningT"></span>
+
             </div>
-            <div class="=kuralEnglish">
+            <div class="kuralnumber">
+                 
+            </div>
+            <div class="kuralEnglish">
                 <div class="kuralDisplayE"></div>
                 <span class="spnChNameE"></span>
                 <span class="spnChGroupE"></span>
                 <span class="spnSectionE"></span>
+                <span class="spnMeaningE"></span>
+
             </div>
 
         </div>
+      
     </div>
 
 
     <!--for mobile view-->
     <div class="mobile">
+        <h3> Know your Kural</h3>
+        <div class="kural">
+        <input id="mkuralNo" placeholder="Enter kural Number" onclick="thirukkural.getKuralbyNo(kuralNo.value)"> OR 
+        <button id="mbtnRandomNo" onclick="thirukkural.getRandomKural()"> Get a random Kural</button>
+        </div>
+        <div class="resultKural">
+            <div class="kuralTamil">
+                <div class="kuralDisplayT"></div>
+                
+                <span class="spnMeaningT"></span>
 
+            </div>
+            <div class="kuralEnglish">
+                <div class="kuralDisplayE"></div>
+               
+                <span class="spnMeaningE"></span>
+
+            </div>
+
+        </div>
     </div>
     <script src="assets/JS/thirukkural.js"></script>
 </body>
