@@ -9,13 +9,14 @@
 </head>
 <body>
     <!-- for big screen view-->
-    <div class="bigScreen" >
+    
         <h3> Know your Kural</h3>
         <div class="kural">
         <input id="kuralNo" placeholder="Enter kural Number" onclick="thirukkural.getKuralbyNo(kuralNo.value)"> OR 
         <button id="btnRandomNo" onclick="thirukkural.getRandomKural()"> Get a random Kural</button>
         </div>
-        <div class="resultKural">
+        <div class="bigScreen" >
+         <div class="resultKural">
             <div class="kuralTamil">
                 <div class="kuralDisplayT"></div>
                 <span class="spnChNameT"></span>
@@ -37,28 +38,34 @@
             </div>
 
         </div>
+        </div>
       
-    </div>
+    
 
 
     <!--for mobile view-->
-    <div class="mobile">
+    <!--
         <h3> Know your Kural</h3>
         <div class="kural">
         <input id="mkuralNo" placeholder="Enter kural Number" onclick="thirukkural.getKuralbyNo(kuralNo.value)"> OR 
         <button id="mbtnRandomNo" onclick="thirukkural.getRandomKural()"> Get a random Kural</button>
-        </div>
+        </div>-->
+    <div class="mobile">
+
         <div class="resultKural">
             <div class="kuralTamil">
-                <div class="kuralDisplayT"></div>
+                <div class="mkuralDisplayT"></div>
                 
-                <span class="spnMeaningT"></span>
+                <span class="mspnMeaningT"></span>
 
             </div>
+            <div class="mkuralnumber">
+                 
+            </div>
             <div class="kuralEnglish">
-                <div class="kuralDisplayE"></div>
+                <div class="mkuralDisplayE"></div>
                
-                <span class="spnMeaningE"></span>
+                <span class="mspnMeaningE"></span>
 
             </div>
 

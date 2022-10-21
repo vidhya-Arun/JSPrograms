@@ -33,6 +33,8 @@ const thirukkural = {
         updateUI : function(result){
             // Tamil kural display
             document.querySelector('.kuralDisplayT').innerHTML = result.line1 +'<br>' + result.line2;
+
+            document.querySelector('.mkuralDisplayT').innerHTML = result.line1 +'<br>' + result.line2;
             if ( document.querySelector('.spnChNameT').innerHTML !='null')
             {
             document.querySelector('.spnChNameT').innerHTML ='அதிகாரம்: '+ result.chap_tam;
@@ -44,14 +46,19 @@ const thirukkural = {
             document.querySelector('.spnSectionE').innerHTML ='Type: '+ result.sect_eng;
             }
             document.querySelector('.spnMeaningT').innerHTML ='பொருள் : '+ result.tam_exp;
+            document.querySelector('.mspnMeaningT').innerHTML ='பொருள் : '+ result.tam_exp;
+
             //result number display
             document.querySelector('.kuralnumber').innerHTML = result.number;
+            document.querySelector('.mkuralnumber').innerHTML = result.number;
             
             // English kural display
             document.querySelector('.kuralDisplayE').innerHTML = result.eng;
+            document.querySelector('.mkuralDisplayE').innerHTML = result.eng;
            
             document.querySelector('.spnMeaningE').innerHTML ='Meaning :' + result.eng_exp;
-
+            document.querySelector('.mspnMeaningE').innerHTML ='Meaning :' + result.eng_exp;
+                
         }
 
 }

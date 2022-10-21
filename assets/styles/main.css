@@ -40,6 +40,8 @@ button{
 .bigScreen{
     display: none;
 }
+
+
 @media only screen and (min-width:600px)
 {
     .bigScreen{
@@ -55,16 +57,16 @@ button{
 .kuralEnglish{
     display: grid;
 }
-.kuralnumber{
+.kuralnumber, .mkuralnumber{
     text-align: center;
     display: grid;
     /* justify-items: end; */
     align-items: center;
     border:solid;
 }
-.kuralDisplayT{
+.kuralDisplayT, .mkuralDisplayT{
     background: antiquewhite;
 }
-.kuralDisplayE{
+.kuralDisplayE, .mkuralDisplayE{
     background: antiquewhite;
 }
